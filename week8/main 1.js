@@ -1,0 +1,20 @@
+//Practice-1
+//กลุ่ม
+//060
+const addButton=document.getElementById('add')
+addButton.addEventListener('click',()=>{
+    const box = document.getElementById("box");
+    box.classList.add("bordered")
+})
+ 
+const removeButton=document.getElementById('remove')
+removeButton.addEventListener('click',()=>{
+    const box = document.getElementById("box")
+    box.classList.remove("bordered")
+})
+ 
+const toggleButton=document.getElementById('toggle')
+toggleButton.addEventListener('click',()=>{
+    const box = document.getElementById("box")
+    box.classList.toggle("bordered")
+})
