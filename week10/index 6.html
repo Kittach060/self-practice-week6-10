@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตั้งค่าการแสดงผล</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .small { font-size: 12px; }
+    .medium { font-size: 16px; }
+    .large { font-size: 20px; }
+
+    label, select, input {
+      display: block;
+      margin: 10px 0;
+    }
+    button {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ตั้งค่าการแสดงผลของหน้าเว็บ</h1>
+
+  <form id="settings-form">
+    <label>
+      Background Color:
+      <input type="color" id="bgColor" />
+    </label>
+
+    <label>
+      Font Color:
+      <input type="color" id="fontColor" />
+    </label>
+
+    <label>
+      Font Size:
+      <select id="fontSize">
+        <option value="small">Small</option>
+        <option value="medium" selected>Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </label>
+
+    <button type="button" id="saveBtn">Save</button>
+    <button type="button" id="resetBtn">Reset</button>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
